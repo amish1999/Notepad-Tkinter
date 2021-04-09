@@ -19,3 +19,5 @@ Functionalities that the user can perform:
 - open terminal and move to the location of the file saved
 - run the following command
   `python "filename".py`    
+
+![alt text](https://github.com/amish1999/Notepad-Tkinter/blob/main/Screenshot%20from%202021-04-10%2005-20-38.png)
