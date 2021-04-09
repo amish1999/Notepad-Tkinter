@@ -9,12 +9,12 @@ Functionalities that the user can perform:
 -editing
 -cut and paste
 
-##Steps to install & run the application : 
-###install python3
-###install tkinter
+## Steps to install & run the application : 
+### install python3
+### install tkinter
   ` sudo apt-get install python3-tk `
   
-To run this code: 
+# To run this code: 
 -save it by the extension **.py**
 -open terminal and move to the location of the file saved
 -run the following command
