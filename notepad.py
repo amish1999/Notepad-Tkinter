@@ -179,7 +179,19 @@ class Notepad:
 			file.write(self.__thisTextArea.get(1.0,END))
 			file.close()
 
-	<!------------>
+	def __cut(self):
+		self.__thisTextArea.event_generate("<<Cut>>")
+
+	def __copy(self):
+		self.__thisTextArea.event_generate("<<Copy>>")
+
+	def __paste(self):
+		self.__thisTextArea.event_generate("<<Paste>>")
+
+	def run(self):
+
+		# Run main application
+		self.__root.mainloop()
 
 
 
