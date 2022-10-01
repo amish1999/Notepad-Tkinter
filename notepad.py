@@ -152,7 +152,32 @@ class Notepad:
 		self.__file = None
 		self.__thisTextArea.delete(1.0,END)
 
-	////
+	def __saveFile(self):
+
+		if self.__file == None:
+			# Save as new file
+			self.__file = asksaveasfilename(initialfile='Untitled.txt',
+											defaultextension=".txt",
+											filetypes=[("All Files","*.*"),
+												("Text Documents","*.txt")])
+
+			if self.__file == "":
+				self.__file = None
+			else:
+				
+				# Try to save the file
+				file = open(self.__file,"w")
+				file.write(self.__thisTextArea.get(1.0,END))
+				file.close()
+				
+				# Change the window title
+				self.__root.title(os.path.basename(self.__file) + " - Notepad")
+				
+			
+		else:
+			file = open(self.__file,"w")
+			file.write(self.__thisTextArea.get(1.0,END))
+			file.close()
 	
 	
 	
